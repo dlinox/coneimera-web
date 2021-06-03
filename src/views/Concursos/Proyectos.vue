@@ -1,0 +1,210 @@
+<template>
+  <div>
+    <header-page
+      imagen="/images/header-pages/concursos-banner.jpg"
+      titulo="CONCURSOS"
+    />
+    <section>
+      <v-container>
+        <div class="titulo-container">
+          <div class="separador"></div>
+          <div class="titulo">Concursos de proyectos</div>
+        </div>
+        <p>
+          La Asociación Nacional de Estudiantes de Ingeniería Mecánica,
+          Mecatrónica, Eléctrica, Electrónica y Ramas Afines (ANEIMERA), tiene
+          el agrado de invitar a los estudiantes de universidades públicas y
+          privadas, egresados y profesionales, a participar en el XXVII Congreso
+          Nacional y Exposición Internacional de Ingeniería Mecánica, Eléctrica,
+          Electrónica y Ramas Afines, identificado por sus siglas como XXVII
+          CONEIMERA UNA PUNO 2021, que se realizará de modalidad virtual desde
+          el 20 al 30 de Setiembre y el concurso de Papers por la plataforma de
+          Cisco Webex meeting, del 27 al 29 de Setiembre de 2021.
+        </p>
+
+        <div class="text-h6 my-3">
+          Bases del concurso
+          <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1l8FeWMVoAbMoaosUV41qVP8TGGutkFb0/view?usp=sharing">
+            BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon>
+          </v-btn>
+        </div>
+        <div class="text-h6">Fechas Importantes</div>
+        <v-card flat>
+          <v-timeline align-top dense>
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>31 de mayo al 16 de julio</strong>
+                </v-col>
+                <v-col>
+                  <strong>PRIMERA FASE</strong>
+                  <div class="text-caption">
+                    Recepción de resúmenes del proyecto.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>19 de julio al 30 de julio</strong>
+                </v-col>
+                <v-col>
+                  <strong>PRIMERA FASE</strong>
+                  <div class="text-caption">
+                    Notificaciones de las recepciones y observación de
+                    resúmenes.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>30 de julio</strong>
+                </v-col>
+                <v-col>
+                  <strong>PRIMERA FASE</strong>
+                  <div class="text-caption">
+                    Validación, notificación y publicación de proyectos
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>2 de agosto hasta el 13 de agosto</strong>
+                </v-col>
+                <v-col>
+                  <strong>SEGUNDA FASE</strong>
+                  <div class="text-caption">
+                    Recepción de avances de los proyectos.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>16 de agosto hasta el 25 agosto</strong>
+                </v-col>
+                <v-col>
+                  <strong>SEGUNDA FASE</strong>
+                  <div class="text-caption">
+                    Notificaciones de lasrecepciones y observación de avances de
+                    los proyectos.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>27 de agosto</strong>
+                </v-col>
+                <v-col>
+                  <strong>SEGUNDA FASE</strong>
+                  <div class="text-caption">
+                    Validación, notificación y publicación de los proyectos.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>30 de agosto al 10 de septiembre</strong>
+                </v-col>
+                <v-col>
+                  <strong>TERCERA FASE</strong>
+                  <div class="text-caption">
+                    Recepción informe final de los proyectos
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>13 de septiembre</strong>
+                </v-col>
+                <v-col>
+                  <strong>TERCERA FASE</strong>
+                  <div class="text-caption">
+                    Notificación de recepción y observación del informe final
+                    presentado.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>20 de septiembre</strong>
+                </v-col>
+                <v-col>
+                  <strong>TERCERA FASE</strong>
+                  <div class="text-caption">
+                    Validación, notificación y publicación de los Papers.
+                  </div>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>27 - 29 de septiembre </strong>
+                </v-col>
+                <v-col>
+                  <strong>PRESENTACIÓN Y EXPOSICIÓN.</strong>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+
+            <v-timeline-item color="primary" small>
+              <v-row class="pt-1">
+                <v-col cols="3">
+                  <strong>30 de septiembre</strong>
+                </v-col>
+                <v-col>
+                  <strong>RESULTADOS Y PREMIACIÓN</strong>
+                </v-col>
+              </v-row>
+            </v-timeline-item>
+          </v-timeline>
+        </v-card>
+      </v-container>
+    </section>
+  </div>
+</template>
+
+<script>
+import HeaderPage from "@/components/HeaderPage.vue";
+export default {
+  components: { HeaderPage },
+  name: "Proyectos",
+  metaInfo: {
+    title: "CONSUROS DE PROYECTOS",
+  },
+};
+</script>
+
+<style>
+.v-card--reveal {
+  align-items: center;
+  bottom: 0;
+  justify-content: center;
+  opacity: 0.9;
+  position: absolute;
+  width: 100%;
+}
+</style>
