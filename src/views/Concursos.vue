@@ -37,7 +37,13 @@
                     >
                       <div>
                         <div class="text-h5 mb-3">{{ item.titulo }}</div>
-                        <v-btn tile small color="pimario"> Ver Más </v-btn>
+                        <v-btn 
+                          tile 
+                          small 
+                          color="pimario"
+                          link
+                          :to="item.mas_ruta"
+                        > Ver Más </v-btn>
                       </div>
                     </div>
                   </v-expand-transition>
@@ -114,6 +120,7 @@ export default {
         imagen: "/images/Concursos/programacion.jpeg",
         titulo: "Programacion",
         tipo: "destreza",
+        mas_ruta: "/concurso-de-programacion",
       },
       {
         imagen: "/images/Concursos/drones.jpeg",

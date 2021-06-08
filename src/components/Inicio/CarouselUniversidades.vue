@@ -8,6 +8,7 @@
           <figure><img src="images/universidades/logoungbg.png" /></figure>
           <figure><img src="images/universidades/logountels.png" /></figure>
           <figure><img src="images/universidades/Logo UNAS.png" /></figure>
+          <figure><img src="images/universidades/logoucv.png" /></figure>
           <figure><img src="images/universidades/escudo-UNPRG.png" /></figure>
           <figure><img src="images/universidades/logounc.png" /></figure>
           <figure><img src="images/universidades/logouni.png" /></figure>
@@ -31,7 +32,7 @@ export default {
   },
   methods: {
     GirarCarousel() {
-      if (this.val >= 320) {
+      if (this.val >= 352) {
         this.val = 32;
       }
       this.val += 32;
@@ -97,34 +98,37 @@ figure {
   transform: rotateY(0deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(2) {
-  transform: rotateY(32.7deg) translateZ(300px);
+  transform: rotateY(30deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(3) {
-  transform: rotateY(65.4deg) translateZ(300px);
+  transform: rotateY(60deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(4) {
-  transform: rotateY(98.1deg) translateZ(300px);
+  transform: rotateY(90deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(5) {
-  transform: rotateY(130.8deg) translateZ(300px);
+  transform: rotateY(120deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(6) {
-  transform: rotateY(163.5deg) translateZ(300px);
+  transform: rotateY(150deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(7) {
-  transform: rotateY(196.2deg) translateZ(300px);
+  transform: rotateY(180deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(8) {
-  transform: rotateY(228.9deg) translateZ(300px);
+  transform: rotateY(210deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(9) {
-  transform: rotateY(261.6deg) translateZ(300px);
+  transform: rotateY(240deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(10) {
-  transform: rotateY(294.3deg) translateZ(300px);
+  transform: rotateY(270deg) translateZ(300px);
 }
 .content-carrousel figure:nth-child(11) {
-  transform: rotateY(327deg) translateZ(300px);
+  transform: rotateY(300deg) translateZ(300px);
+}
+.content-carrousel figure:nth-child(12) {
+  transform: rotateY(330deg) translateZ(300px);
 }
 
 .content-carrousel img {
