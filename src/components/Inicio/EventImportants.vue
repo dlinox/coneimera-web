@@ -101,9 +101,11 @@ export default {
     margin-bottom: 0px;
     
   }
+
   .text-container .text {
     width: 100%;
   }
+
 }
 
 </style>
