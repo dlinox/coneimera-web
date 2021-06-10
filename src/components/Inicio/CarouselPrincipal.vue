@@ -9,7 +9,7 @@
                 <b>{{ slide.texto }}</b>
               </div>
               <div class="pimario--text text-h6 text-sm-h4 text-center">
-                <strong>{{ slide.subtitulo }}</strong>
+                <strong style="color:#ff4500">{{ slide.subtitulo }}</strong>
               </div>
             </v-container>
           </div>

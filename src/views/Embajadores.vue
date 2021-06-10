@@ -12,7 +12,7 @@
           <div class="titulo">NUESTROS EMBAJADORES</div>
         </div>
         <v-row justify="space-between">
-          <v-col cols="6" sm="4" md="3" v-for="(item, index) in items_embajadores" :key="index">
+          <v-col class="pa-4" cols="6" sm="4" md="3" v-for="(item, index) in items_embajadores" :key="index">
             <v-card>
               <v-img :src="item.imagen" ></v-img>
             </v-card>
@@ -40,21 +40,25 @@ export default {
       {imagen:'/images/embajadores/Augusto.png'},
       {imagen:'/images/embajadores/Carolina.png'},
       {imagen:'/images/embajadores/D_angelo.png'},
+      {imagen:'/images/embajadores/Dalia.png'},
       {imagen:'/images/embajadores/Dany.png'},
       {imagen:'/images/embajadores/Erick.png'},
       {imagen:'/images/embajadores/Francis.png'},
       {imagen:'/images/embajadores/Helen.png'},
       {imagen:'/images/embajadores/Julio.png'},
+      {imagen:'/images/embajadores/Julio_Roberto.png'},
       {imagen:'/images/embajadores/Lucia.png'},
       {imagen:'/images/embajadores/Luis.png'},
       {imagen:'/images/embajadores/Manuel_1.png'},
       {imagen:'/images/embajadores/Manuel.png'},
+      {imagen:'/images/embajadores/Marcelo.png'},
       {imagen:'/images/embajadores/Matheus.png'},
       {imagen:'/images/embajadores/Mayra.png'},
       {imagen:'/images/embajadores/Mónica.png'},
       {imagen:'/images/embajadores/Ronnie.png'},
       {imagen:'/images/embajadores/Yeidi.png'},
       {imagen:'/images/embajadores/Zedrix.png'},
+      {imagen:''},
     ],
   }),
   created() {
