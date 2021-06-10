@@ -13,6 +13,7 @@ import Ponencias from '../views/Ponencias.vue'
 //rutas temporales
 import Papers from '../views/Concursos/Paper.vue'
 import Proyectos from '../views/Concursos/Proyectos.vue'
+import Programacion from '../views/Concursos/Programacion.vue'
 
 Vue.use(VueMeta)
 Vue.use(VueRouter)
@@ -69,6 +70,11 @@ const routes = [
     path: '/concurso-de-proyectos',
     name: 'Poyectos',
     component: Proyectos
+  },
+  {
+    path: '/concurso-de-programacion',
+    name: 'Programacion',
+    component: Programacion
   },
 ]
 

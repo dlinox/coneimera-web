@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <div class="navbar">
+    <div class="navbar" style="z-index:9999999;">
       <v-container>
         <div class="py-0 barrar_menu">
           <div class="d-flex align-center">

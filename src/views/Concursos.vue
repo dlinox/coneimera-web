@@ -9,8 +9,14 @@
         <div class="titulo-container" id="destreza" name="destreza">
           <div class="separador"></div>
           <div class="titulo">Concursos de Destreza</div>
-        </div>
 
+        </div>
+        <div>
+            <video width="100%" controls >
+              <source src="https://participante.coneimera.org/video/DRON.mp4" type="video/mp4" />
+            </video>
+        </div>
+        
         <v-row justify="space-around" class="my-3">
           <v-col
             cols="12"
@@ -37,7 +43,13 @@
                     >
                       <div>
                         <div class="text-h5 mb-3">{{ item.titulo }}</div>
-                        <v-btn tile small color="pimario"> Ver Más </v-btn>
+                        <v-btn 
+                          tile 
+                          small 
+                          color="pimario"
+                          link
+                          :to="item.mas_ruta"
+                        > Ver Más </v-btn>
                       </div>
                     </div>
                   </v-expand-transition>
@@ -54,6 +66,13 @@
           <div class="separador"></div>
           <div class="titulo">Concursos de Investigación</div>
         </div>
+        <div>
+            <video width="100%" controls >
+              <source src="https://participante.coneimera.org/video/proyectos-papers.mp4" type="video/mp4" />
+            </video>
+        </div>
+        
+
         <v-row justify="space-around" class="my-3">
           <v-col
             cols="12"
@@ -114,6 +133,7 @@ export default {
         imagen: "/images/Concursos/programacion.jpeg",
         titulo: "Programacion",
         tipo: "destreza",
+        mas_ruta: "/concurso-de-programacion",
       },
       {
         imagen: "/images/Concursos/drones.jpeg",

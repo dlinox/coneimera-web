@@ -7,16 +7,17 @@
           <div class="separador"></div>
           <div class="titulo">Eventos Importantes</div>
         </div>
-        <event-importants />
+        <event-importants/>
       </v-container>
     </section>
     <section id="plataforma-virtway">
       <v-container>
         <div class="titulo-container">
           <div class="separador"></div>
-          <div class="titulo">Plataforma VirtWay</div>
+          <div class="titulo">PLATAFORMA VIRTUAL XXVII CONEIMERA UNA PUNO</div>
         </div>
-        <video width="100%" controls >
+        <video width="100%" controls poster="/images/poster-home.png">
+
           <source src="https://participante.coneimera.org/video/video_1.mp4" type="video/mp4" />
         </video>
       </v-container>
