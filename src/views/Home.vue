@@ -7,18 +7,20 @@
           <div class="separador"></div>
           <div class="titulo">Eventos Importantes</div>
         </div>
-        <event-importants />
+        <event-importants/>
       </v-container>
     </section>
     <section id="plataforma-virtway">
-      <v-container>
+      <v-container >
         <div class="titulo-container">
           <div class="separador"></div>
-          <div class="titulo">Plataforma VirtWay</div>
+          <div class="titulo">PLATAFORMA VIRTUAL XXVII CONEIMERA UNA PUNO</div>
         </div>
-        <video width="100%" controls >
-          <source src="https://participante.coneimera.org/video/video_1.mp4" type="video/mp4" />
-        </video>
+        <div class="videoContainer">
+          <video  controls poster="/images/poster-home.png" class="videoHome">
+            <source src="https://participante.coneimera.org/video/video_1.mp4" type="video/mp4" />
+          </video>
+        </div>
       </v-container>
     </section>
     <section id="universidads-asociadas-aneimera">
@@ -27,8 +29,9 @@
           <div class="separador"></div>
           <div class="titulo">Universidades Asociadas a Aneimera</div>
         </div>
-        <carousel-universidades />
+        <carousel-universidades/>
       </v-container>
+      <!--  <carousel-universidades/> -->
     </section>
 
     <section id="universidads-asociadas-aneimera">
@@ -82,6 +85,19 @@ export default {
 <style>
 #plataforma-virtway {
   background: #eee;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.videoContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.videoHome {
+  width: 83%;
+
 }
 #footer {
   background: #222;
@@ -92,6 +108,9 @@ export default {
 .item-menu:hover .v-list-item__content {
   color: #035159;
 }
-@media (max-width: 700px) {
+@media (max-width: 600px) {
+  .videoHome {
+    width: 100%;
+  }
 }
 </style>

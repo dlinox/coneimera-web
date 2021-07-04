@@ -4,13 +4,14 @@
       imagen="/images/header-pages/concursos-banner.jpg"
       titulo="CONCURSOS"
     />
-    <section>
+    <section style="background:#286972;">
       <v-container>
         <div class="titulo-container" id="destreza" name="destreza">
           <div class="separador"></div>
           <div class="titulo">Concursos de Destreza</div>
         </div>
 
+        
         <v-row justify="space-around" class="my-3">
           <v-col
             cols="12"
@@ -37,7 +38,13 @@
                     >
                       <div>
                         <div class="text-h5 mb-3">{{ item.titulo }}</div>
-                        <v-btn tile small color="pimario"> Ver Más </v-btn>
+                        <v-btn 
+                          tile 
+                          small 
+                          color="pimario"
+                          link
+                          :to="item.mas_ruta"
+                        > Ver Más </v-btn>
                       </div>
                     </div>
                   </v-expand-transition>
@@ -48,12 +55,15 @@
         </v-row>
       </v-container>
     </section>
-    <section>
+
+    
+    <section style="background:#286972;">
       <v-container>
         <div class="titulo-container" id="investigacion" name="investigacion">
           <div class="separador"></div>
           <div class="titulo">Concursos de Investigación</div>
-        </div>
+        </div>        
+
         <v-row justify="space-around" class="my-3">
           <v-col
             cols="12"
@@ -114,31 +124,37 @@ export default {
         imagen: "/images/Concursos/programacion.jpeg",
         titulo: "Programacion",
         tipo: "destreza",
+        mas_ruta: "/concurso-de-programacion",
       },
       {
         imagen: "/images/Concursos/drones.jpeg",
         titulo: "Drones",
         tipo: "destreza",
+        mas_ruta: "/concurso-de-drones",
       },
       {
         imagen: "/images/Concursos/contractores.jpeg",
         titulo: "Contactores",
         tipo: "destreza",
+        mas_ruta: "/concurso-de-contactadores",
       },
       {
         imagen: "/images/Concursos/disenioEstructural.jpeg",
         titulo: "Diseño Estructural",
         tipo: "destreza",
+        
       },
       {
         imagen: "/images/Concursos/PLC.jpeg",
         titulo: "PLC",
         tipo: "destreza",
+        mas_ruta:"/concurso-de-programacion-en-plc"
       },
       {
         imagen: "/images/Concursos/conocimientos.jpeg",
         titulo: "Conocimientos",
         tipo: "destreza",
+        mas_ruta:"/concurso-de-conocimientos"
       },
 
     ],
@@ -168,5 +184,15 @@ export default {
   opacity: 0.9;
   position: absolute;
   width: 100%;
+}
+
+.Cvideo{
+  width: 75%;
+}
+
+@media (max-width: 960px) {
+  .Cvideo{
+    width: 100%;
+  }
 }
 </style>

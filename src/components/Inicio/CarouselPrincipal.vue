@@ -9,7 +9,7 @@
                 <b>{{ slide.texto }}</b>
               </div>
               <div class="pimario--text text-h6 text-sm-h4 text-center">
-                <strong>{{ slide.subtitulo }}</strong>
+                <strong style="color:#ff4500">{{ slide.subtitulo }}</strong>
               </div>
             </v-container>
           </div>
@@ -54,19 +54,25 @@ export default {
       {
         foto: "/images/imgconcurso1.jpg",
         texto:
-          "XXVII Congreso Nacional y Exposición Internacional de Ingeniería Mecánica, Mecatrónica, Eléctrica, Electrónica y Ramas Afines UNA PUNO 2021",
-        subtitulo: "Del 20 al 30 de septiembre",
+          "XXVII CONGRESO NACIONAL Y EXPOSICIÓN INTERNACIONAL DE INGENIERÍA MECÁNICA, MECATRÓNICA, ELÉCTRICA, ELECTRÓNICA Y RAMAS AFINES    UNA PUNO 2021",
+        subtitulo: null,
       },
       {
-        foto: "/images/banner-1.jpg",
-        texto: "ENCUENTROS ONLINE 3D!",
-        subtitulo: "Virtway",
+        foto: "/images/baner1.png",
+        texto: null,
+        subtitulo: null,
       },
       {
-        foto: "/images/carousel-3.jpg",
-        texto: "⦁ Concursos ⦁ Minicursos ⦁ Ponencias Magistrales ⦁	Visitas Técnicas ⦁	Actividades Culturales ⦁	Virtway Events",
-        subtitulo: "",
+        foto: "/images/baner2.png",
+        texto: null,
+        subtitulo: null,
       },
+      {
+        foto: "/images/baner3.png",
+        texto: null,
+        subtitulo: null,
+      },
+    
     ],
     hours: 0,
     days: 0,
@@ -144,7 +150,7 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(3, 81, 89, 0.5);
+  background: #0350595d;
   display: flex;
   justify-content: center;
   align-items: center;

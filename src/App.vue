@@ -1,6 +1,6 @@
 <template>
   <v-app class="app">
-    <div class="navbar">
+    <div class="navbar" style="z-index:99;">
       <v-container>
         <div class="py-0 barrar_menu">
           <div class="d-flex align-center">
@@ -109,7 +109,7 @@
       </v-container>
     </div>
 
-    <v-navigation-drawer v-model="menu_drawer" fixed right class="d-md-none">
+    <v-navigation-drawer v-model="menu_drawer" fixed right class="d-md-none" style="z-index:999">
       <v-row justify="end">
         <v-col cols="12" class="d-flex justify-end pr-3">
           <v-btn icon @click="menu_drawer = !menu_drawer">

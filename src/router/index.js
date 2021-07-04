@@ -13,6 +13,12 @@ import Ponencias from '../views/Ponencias.vue'
 //rutas temporales
 import Papers from '../views/Concursos/Paper.vue'
 import Proyectos from '../views/Concursos/Proyectos.vue'
+import Programacion from '../views/Concursos/Programacion.vue'
+import Drones from '../views/Concursos/Drones.vue'
+import Plc from '../views/Concursos/Plc.vue'
+import Contactadores from '../views/Concursos/Contactadores.vue'
+import Conocimientos from '../views/Concursos/Conocimientos.vue'
+
 
 Vue.use(VueMeta)
 Vue.use(VueRouter)
@@ -69,6 +75,31 @@ const routes = [
     path: '/concurso-de-proyectos',
     name: 'Poyectos',
     component: Proyectos
+  },
+  {
+    path: '/concurso-de-programacion',
+    name: 'Programacion',
+    component: Programacion
+  },
+  {
+    path: '/concurso-de-drones',
+    name: 'Drones',
+    component: Drones
+  },
+  {
+    path: '/concurso-de-programacion-en-plc',
+    name: 'Plc',
+    component: Plc
+  },
+  {
+    path: '/concurso-de-contactadores',
+    name: 'Contactadores',
+    component: Contactadores
+  },
+  {
+    path: '/concurso-de-conocimientos',
+    name: 'Conocimientos',
+    component: Conocimientos
   },
 ]
 
