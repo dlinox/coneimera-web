@@ -1,6 +1,58 @@
 <template>
   <div>
-    <v-card flat v-for="(item, index) in items" :key="index" class="cardEvents">
+    <v-card flat v-for="(item, index) in item1" :key="index" class="cardEvents">
+      <v-row class="my-5">
+        <v-col cols="12" sm="3" md="2" class="d-flex align-items-center justify-center pb-2" style="display:flex; justify:center; align-items:center; ">
+          <div class="fecha-container">
+            <div class="fecha">
+              <h2 >{{ item.dia }}</h2>
+              <h4 class="mb-0">{{ item.mes }}</h4>
+            </div>
+          </div>
+        </v-col>
+        <v-col cols="12" sm="9" md="6" class="d-flex pt-2">
+          <div class="text-container">
+            <div class="text">
+              <v-card-title class="titulo"> {{ item.titulo }} </v-card-title>
+              <v-card-subtitle class="subtitulo" style="color: white !important;">
+                {{ item.sub_titulo }}
+              </v-card-subtitle>
+              <v-card-text class="texto">
+                {{ item.texto }}
+              </v-card-text>
+            </div>
+          </div>
+        </v-col>
+        <v-col v-if="item.video !== null" sm="4" md="4" >
+          <video controls :poster="item.poster" width="100%" class="align-items-center d-none d-md-flex my-2">
+            <source :src="item.video" type="video/mp4"/>
+           </video>
+        </v-col>
+        <v-col v-else sm="4" md="4" class="align-items-center d-none d-md-flex my-2">
+          <img :src="item.imagen" alt="" width="100%" />
+        </v-col>
+
+      </v-row>
+    </v-card>
+    
+
+    <v-row class="v-row">
+        <v-col class="col hContainerFechasImportantes">
+            <v-col  md="6" sm="12" xs="12">
+              <Papers/>
+            </v-col>
+            <v-col  md="6" sm="12" xs="12" class="pt-6">
+                <div class="hContainerVideoPaper">
+                  <video width="100%" controls >
+                      <source src="https://participante.coneimera.org/video/proyectos-papers.mp4" type="video/mp4" />
+                  </video>
+                </div>
+            </v-col>
+        </v-col>       
+    </v-row>
+
+
+    <v-card flat v-for="(item, index) in item3" :key="index" class="cardEvents">
       <v-row class="my-5">
         <v-col cols="12" sm="3" md="2" class="d-flex align-items-center justify-center pb-2" style="display:flex; justify:center; align-items:center; ">
           <div class="fecha-container">
@@ -35,30 +87,39 @@
       </v-row>
     </v-card>
   </div>
+  
 </template>
 
 <script>
+import Papers from "@/components/Concursos/Papers.vue";
+
 export default {
+  components: { Papers },
   data: () => ({
-    items: [
+    item1: [
       {
-        dia: "01 - 11",
-        mes: "Julio",
+        dia: "20",
+        mes: "Setiembre",
         titulo: "Apertura de Congreso",
         sub_titulo: "Bienvenido al congreso",
         imagen: "/images/banner-1.jpg",
         video: null,
       },
+    ],
+    item2: [
       {
-        dia: "16 - 25",
-        mes: "Agosto",
-        titulo: "Inicio de Concursos",
-        sub_titulo: "Apertura de inscripciones en la pagina de usuario",
-        imagen: "/images/banner-3.jpeg",
-        video: "https://participante.coneimera.org/video/proyectos-papers.mp4",
+        dia: "30",
+        mes: "Septiembre",
+        titulo: "Ceremonia de Clausura",
+        sub_titulo: "Cierre del congreso!!",
+        texto:null,
+        imagen: "/images/clausura.jpg",
+        video: null,
       },
+    ],
+    item3: [
       {
-        dia: "01-10",
+        dia: "30",
         mes: "Septiembre",
         titulo: "Ceremonia de Clausura",
         sub_titulo: "Cierre del congreso!!",
@@ -124,6 +185,30 @@ export default {
 }
 
 
+
+.hContainerFechasImportantes{
+  display: flex;
+  align-items: center;
+  margin: 12px;
+  background:  #286971;
+  border-radius: 5px;
+}
+.hContainerVideoPaper{
+  margin-top: 10px;
+  display: flex;
+  margin-right:-8px;
+}
+
+@media (max-width: 600px) {
+  .hContainerFechasImportantes{
+      display: block;
+  }
+  .hContainerVideoPaper{
+    margin-top: 0px;
+    width: 100% !important;
+  
+  }
+}
 
 
 

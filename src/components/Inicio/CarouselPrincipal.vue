@@ -52,9 +52,8 @@ export default {
   data: () => ({
     slides: [
       {
-        foto: "/images/imgconcurso1.jpg",
-        texto:
-          "XXVII CONGRESO NACIONAL Y EXPOSICIÓN INTERNACIONAL DE INGENIERÍA MECÁNICA, MECATRÓNICA, ELÉCTRICA, ELECTRÓNICA Y RAMAS AFINES    UNA PUNO 2021",
+        foto: "/images/baner0.png",
+        texto: null,
         subtitulo: null,
       },
       {
@@ -69,6 +68,11 @@ export default {
       },
       {
         foto: "/images/baner3.png",
+        texto: null,
+        subtitulo: null,
+      },
+      {
+        foto: "/images/baner4.png",
         texto: null,
         subtitulo: null,
       },
@@ -150,7 +154,7 @@ export default {
   left: 0;
   height: 100%;
   width: 100%;
-  background: #0350595d;
+  background: #03505933;
   display: flex;
   justify-content: center;
   align-items: center;
