@@ -6,6 +6,22 @@
         <div class="titulo-container">
           <div class="separador"></div>
           <div class="titulo">Eventos Importantes</div>
+          
+          <v-row>
+          <v-col class="Iflyer">
+            <div class="col-md-6 sm-12 sx-12" >
+              <a href="">
+                <img src="/images/ConcursoPapers.png" alt="" width="100%">
+              </a>
+            </div>
+            <div class="col-md-6">
+              <a href="">
+                <img src="/images/ConcursoProyectos.png" alt="" width="100%">
+              </a>
+            </div>
+          </v-col>
+          </v-row>
+          
         </div>
         <event-importants/>
       </v-container>
@@ -62,7 +78,6 @@ export default {
   },
   name: "Home",
   metaInfo: {
-    title: "INICIO",
   },
 
   data: () => ({}),
@@ -108,9 +123,17 @@ export default {
 .item-menu:hover .v-list-item__content {
   color: #035159;
 }
+.Iflyer{
+  display: flex;
+  padding: 0px;
+}
 @media (max-width: 600px) {
   .videoHome {
     width: 100%;
+  }
+  .Iflyer{
+    display: block;
+    padding: 0px;
   }
 }
 </style>

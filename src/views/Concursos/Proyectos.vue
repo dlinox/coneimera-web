@@ -6,25 +6,16 @@
     />
     <section>
       <v-container>
-        <div class="titulo-container">
-          <div class="separador"></div>
-          <div class="titulo">Concursos de proyectos</div>
-        </div>
-        <p>
-          La Asociación Nacional de Estudiantes de Ingeniería Mecánica,
-          Mecatrónica, Eléctrica, Electrónica y Ramas Afines (ANEIMERA), tiene
-          el agrado de invitar a los estudiantes de universidades públicas y
-          privadas, egresados y profesionales, a participar en el XXVII Congreso
-          Nacional y Exposición Internacional de Ingeniería Mecánica, Eléctrica,
-          Electrónica y Ramas Afines, identificado por sus siglas como XXVII
-          CONEIMERA UNA PUNO 2021, que se realizará de modalidad virtual desde
-          el 20 al 30 de Setiembre y el concurso de Papers por la plataforma de
-          Cisco Webex meeting, del 27 al 29 de Setiembre de 2021.
-        </p>
+      <div >
+        <FlyerProyectos class="v-FlyerProyectos"/>
+      </div>
+      <div class="text-h6 my-3 basesP">Bases del concurso <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1Y3d4b7uG1EXeOA1NelY6lk6Sqx9sbmIE/view?usp=sharing"> BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon> </v-btn></div>
 
-        <div class="text-h6 my-3">
+<!--
+
+         <div class="text-h6 my-3">
           Bases del concurso
-          <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1l8FeWMVoAbMoaosUV41qVP8TGGutkFb0/view?usp=sharing">
+          <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1kwERrieKBeNkWWWkJejvduh4RXyh1jhJ/view?usp=sharing">
             BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon>
           </v-btn>
         </div>
@@ -181,7 +172,7 @@
               </v-row>
             </v-timeline-item>
           </v-timeline>
-        </v-card>
+        </v-card> -->
       </v-container>
     </section>
   </div>
@@ -189,8 +180,9 @@
 
 <script>
 import HeaderPage from "@/components/HeaderPage.vue";
+import FlyerProyectos from './FlyerProyectos.vue'; 
 export default {
-  components: { HeaderPage },
+  components: { HeaderPage, FlyerProyectos },
   name: "Proyectos",
   metaInfo: {
     title: "CONSUROS DE PROYECTOS",
@@ -207,4 +199,29 @@ export default {
   position: absolute;
   width: 100%;
 }
+.v-FlyerProyectos{
+  padding:0px; 
+  margin-top:20px;
+  padding-bottom:10px;
+  margin-bottom:20px; 
+  border: solid 0.5px #dbbf1e32; 
+  border-radius:8px; 
+  overflow:hidden;
+  box-shadow: 2px 5px 10px 2px #00000052;
+}
+@media (max-width: 600px) {
+  
+  .v-FlyerProyectos{
+    padding:0px;
+    overflow:visible;
+    padding-bottom:20px;
+    border:none; 
+    box-shadow: none;
+    border-top: solid 0px #030f7c;
+    border-bottom: solid 0px #030f7c; 
+    border-radius:8px; 
+  }
+
+}
+
 </style>

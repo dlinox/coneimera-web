@@ -1,5 +1,5 @@
 <template>
-  <div class="d-flex" style="background: #286971;">
+  <div class="d-flex">
     <div class="contenedor-universidades-carousel">
       <div class="content-all">
         <div class="content-carrousel">
@@ -14,7 +14,7 @@
           <figure><img src="images/universidades/logouni.png" /></figure>
           <figure><img src="images/universidades/logounsa.png" /></figure>
           <figure><img src="images/universidades/logounsac.jpg" /></figure>
-          <figure><img src="images/universidades/logountels.png" /></figure>
+          <figure><img src="images/universidades/logoUNT.png" /></figure>
           <figure><img src="images/universidades/logounap.jpg" /></figure>
         </div>
       </div>

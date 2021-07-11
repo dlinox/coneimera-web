@@ -7,8 +7,8 @@
     <section style="background:#286972;">
       <v-container>
         <div class="titulo-container" id="destreza" name="destreza">
-          <div class="separador"></div>
-          <div class="titulo">Concursos de Destreza</div>
+          <div class="separador" style="background:#e42e0ef7;"></div>
+          <div class="titulo" style="color:#e42e0ef7;">Concursos de Destreza</div>
         </div>
 
         
@@ -60,8 +60,8 @@
     <section style="background:#286972;">
       <v-container>
         <div class="titulo-container" id="investigacion" name="investigacion">
-          <div class="separador"></div>
-          <div class="titulo">Concursos de Investigación</div>
+          <div class="separador" style="background:#b42b0bf2;"></div>
+          <div class="titulo" style="color:#b42e0ef7;">Concursos de Investigación</div>
         </div>        
 
         <v-row justify="space-around" class="my-3">

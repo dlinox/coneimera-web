@@ -6,24 +6,12 @@
     />
     <section>
       <v-container>
-        <div class="titulo-container">
-          <div class="separador"></div>
-          <div class="titulo">Concursos de Papers</div>
-        </div>
-        <p>
-          La Asociación Nacional de Estudiantes de Ingeniería Mecánica,
-          Mecatrónica, Eléctrica, Electrónica y Ramas Afines (ANEIMERA), tiene
-          el agrado de invitar a los estudiantes de universidades públicas y
-          privadas, egresados y profesionales, a participar en el XXVII Congreso
-          Nacional y Exposición Internacional de Ingeniería Mecánica, Eléctrica,
-          Electrónica y Ramas Afines, identificado por sus siglas como XXVII
-          CONEIMERA UNA PUNO 2021, que se realizará de modalidad virtual desde
-          el 20 al 30 de Setiembre y el concurso de Papers por la plataforma de
-          Cisco Webex meeting, del 27 al 29 de Setiembre de 2021.
-        </p>
+      <div >
+        <FlyerPapers class="v-FlyerProyectos"/>
+      </div>
 
-        <div class="text-h6 my-3">Bases del concurso <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1aDjPkGUZilIytRdJAEHlWmQruXBDiAIw/view?usp=sharing"> BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon> </v-btn></div> 
-        <div class="text-h6">Fechas Importantes</div>
+      <div class="text-h6 my-3 basesP">Bases del concurso <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1Y3d4b7uG1EXeOA1NelY6lk6Sqx9sbmIE/view?usp=sharing"> BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon> </v-btn></div> 
+    <!--     <div class="text-h6">Fechas Importantes</div>
         <v-card flat>
           <v-timeline align-top dense>
             <v-timeline-item color="primary" small>
@@ -176,16 +164,17 @@
               </v-row>
             </v-timeline-item>
           </v-timeline>
-        </v-card>
+        </v-card> * -->
       </v-container>
     </section>
   </div>
 </template>
 
 <script>
+import FlyerPapers from './FlyerPapers.vue'
 import HeaderPage from "@/components/HeaderPage.vue";
 export default {
-  components: { HeaderPage },
+  components: { HeaderPage, FlyerPapers },
   name: "Paper",
   metaInfo: {
     title: "CONSUROS DE PAPERS",
@@ -201,5 +190,16 @@ export default {
   opacity: 0.9;
   position: absolute;
   width: 100%;
+}
+.basesP{
+    width:80%; 
+    margin:auto;
+    padding: 0;
+}
+@media (max-width: 600px) {
+  .basesP{
+    width: 100%;
+  }
+
 }
 </style>

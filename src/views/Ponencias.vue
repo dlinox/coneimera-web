@@ -4,11 +4,11 @@
     imagen="/images/header-pages/concursos-banner.jpg"
     titulo="PONENCIAS"
   />
-  <section style="background:#286972;">
+  <section style="background:#286972; background-image: url('/images/ponencias/fondo.png');  background-repeat: no-repeat; background-size: 100% 100%; opacity:0.9;">
     <v-container>
       <div class="titulo-container" id="destreza" name="destreza">
-        <div class="separador"></div>
-        <div class="titulo">Ponencias</div>
+        <div class="separador" style="background:#e42e0ef7"></div>
+        <div class="titulo" style="color:#e42e0ef7">Ponencias</div>
       </div>
 
       <v-row justify="space-around">
@@ -62,12 +62,13 @@ import HeaderPage from "../components/HeaderPage.vue";
   data: () => ({
     items: [
       {
-        imagen: "/images/banner-1.jpg",
+
+        imagen: "/images/ponencias/conferencias-magistrales.png",
         titulo:"CONFERENCIAS MAGISTRALES",
         texto2: "Profesionales con un alto grado de especialización brindaran una disertación sobre los diferentes temas de interés del XXVII CONEIMERA. Son exposiciones con alto contenido especializado y de investigación exhaustiva. El especialista es el que tendrá la palabra en toda la exposición y al finalizar los asistentes podrán hacer preguntas.",
       },
       {
-        imagen: "/images/banner-1.jpg",
+        imagen: "/images/ponencias/conferencias-internacionales.png",
         titulo:"CONFERENCIAS INTERNACIONALES",
         texto2: "Profesionales representantes de instituciones y universidades internacionales expondrán temas y problemáticas de interés común, al finalizar se buscará soluciones por consenso. El especialista es el que tendrá la palabra en toda la exposición y al finalizar los asistentes podrán hacer preguntas.",
         areas:null,
@@ -75,14 +76,14 @@ import HeaderPage from "../components/HeaderPage.vue";
       },
 
       {
-        imagen: "/images/banner-1.jpg",
+        imagen: "/images/ponencias/mesa-redonda.png",
         titulo:"MESA REDONDA",
         texto2: "La mesa redonda es una dinámica en la que diferentes profesionales tendrán la misma oportunidad de argumentar sus puntos de vistas sobre un tema en específico referido a la temática del XXVII CONEIMERA. Aquí no existirá un grado de importancia o jerarquía entre los que la conforman, puesto que cada uno tendrán los mismos derechos de participación y se buscará soluciones para un consenso en el tema tratado",
         areas:null,
         texto3:null,
       },
       {
-        imagen: "/images/banner-1.jpg",
+        imagen: "/images/ponencias/foro.png",
         titulo:"FORO",
         texto2: "El foro se desarrollará con énfasis en un tema propuesto por el XXVII CONEIMERA, con representantes estudiantes y egresados de diferentes universidades a nivel nacional e internacional, donde conversarán en torno a un tema de interés común, con base en un contenido de interés general que origine una discusión.",
         areas:null,
@@ -106,7 +107,6 @@ import HeaderPage from "../components/HeaderPage.vue";
   margin-right: 10px;
   margin-bottom: 20px;
   text-align: center !important;
-
 }
 
 .ponencias-titulo {

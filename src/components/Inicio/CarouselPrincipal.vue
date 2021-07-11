@@ -1,7 +1,7 @@
 <template>
   <div class="carousel">
     <v-carousel show-arrows-on-hover hide-delimiters cycle height="100%">
-      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.foto">
+      <v-carousel-item v-for="(slide, i) in slides" :key="i" :src="slide.foto" style="imagenCarrucel" width="100%" >
         <div class="cover-carousel">
           <div class="texto-carousel">
             <v-container>
@@ -114,8 +114,11 @@ export default {
 </script>
 <style>
 .carousel {
-  height: 100vh;
+  height: 100vh; 
   position: relative;
+}
+.imagenCarrucel {
+  width: 100%;
 }
 .cuenta-regresiva {
   position: absolute;
@@ -194,6 +197,11 @@ export default {
   }
   .cuenta-regresiva .item-container .item-label {
     font-size: 15px;
+  }
+}
+@media (max-width: 600px) {
+  .carousel {
+    height: 100%;
   }
 }
 </style>

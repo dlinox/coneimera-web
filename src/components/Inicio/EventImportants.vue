@@ -35,10 +35,11 @@
       </v-row>
     </v-card>
     
-
     <v-row class="v-row">
+    
         <v-col class="col hContainerFechasImportantes">
             <v-col  md="6" sm="12" xs="12">
+                <h3 class="hTitleEventos"> CONCURSO DE PAPERS </h3>
               <Papers/>
             </v-col>
             <v-col  md="6" sm="12" xs="12" class="pt-6">
@@ -185,16 +186,18 @@ export default {
 }
 
 
-
+.hTitleEventos{
+  color: white;
+  margin: 20px;
+}
 .hContainerFechasImportantes{
   display: flex;
-  align-items: center;
   margin: 12px;
   background:  #286971;
   border-radius: 5px;
 }
 .hContainerVideoPaper{
-  margin-top: 10px;
+  margin-top: 60px;
   display: flex;
   margin-right:-8px;
 }

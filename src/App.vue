@@ -2,12 +2,12 @@
   <v-app class="app">
     <div class="navbar" style="z-index:99;">
       <v-container>
-        <div class="py-0 barrar_menu">
+        <div class=" barrar_menu">
           <div class="d-flex align-center">
             <router-link to="/">
               <v-img
                 alt="Vuetify Logo"
-                class="shrink ml-5 py-5"
+                class="shrink ml-5 py-2"
                 contain
                 src="/images/logo.png"
                 transition="scale-transition"
@@ -413,6 +413,26 @@ export default {
   opacity: 0;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
+  .navbar {
+    background: white;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height:80px;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+  }
+  .barrar_menu {
+    margin-top:-5px;
+    top: 0 !important;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: none;
+  }
+
 }
 </style>

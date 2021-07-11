@@ -39,7 +39,7 @@ export default {
       //{ imagen: "images/Parners/UNIVERSIDAD POLITÉCNICA SALESIANA  ASME ECUADOR.png" },
       //{ imagen: "images/Parners/UNIVERSIDAD TÉCNICA DE MANABÍ ASME ECUADOR.png" },
       //{ imagen: "images/Parners/uva pess .png" },
-      { imagen: "images/Parners/student_energy.jpeg" },
+      { imagen: "images/Parners/student_energy.png" },
       { imagen: "images/Parners/WIP- Logo 2017.png" },
       //{ imagen: "images/Parners/.png" },
       //{ imagen: "images/Parners/.png" },
