@@ -9,7 +9,7 @@
       <div >
         <FlyerProyectos class="v-FlyerProyectos"/>
       </div>
-      <div class="text-h6 my-3 basesP">Bases del concurso <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1Y3d4b7uG1EXeOA1NelY6lk6Sqx9sbmIE/view?usp=sharing"> BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon> </v-btn></div>
+      <div class="text-h6 my-3 basesP">Bases del concurso <v-btn color="info" text target="_black" href="https://drive.google.com/file/d/1kwERrieKBeNkWWWkJejvduh4RXyh1jhJ/view?usp=sharing"> BASES (GOOGLE DRIVE) <v-icon right>mdi-google-drive</v-icon> </v-btn></div>
 
 <!--
 
